@@ -2,28 +2,43 @@ function moveIndicator(index) {
   const indicator = document.querySelector(".tab-indicator");
   const tabs = document.querySelectorAll(".tab");
   const activeTab = tabs[index];
-  console.log(tabs);
+  console.log(indicator);
   indicator.style.left = activeTab.offsetLeft + "px";
   indicator.style.width = activeTab.offsetWidth + "px";
+  showTabContent(index);
 }
 function showTabContent(index) {
   const tabContentDivs = document.querySelectorAll(".tabs-content");
+  const tabs = document.querySelectorAll(".tab");
+  console.log(tabContentDivs);
   for (let i = 0; i < tabContentDivs.length; i++) {
     if (index === i) {
       tabContentDivs[i].classList.remove("hide-tabs");
+      tabs[i].style.color = "blue";
     } else if (tabContentDivs[i].classList.contains("hide-tabs") === false) {
       tabContentDivs[i].classList.add("hide-tabs");
+      tabs[i].style.color = "gray";
     }
   }
 }
+function showContent(index) {
+  const contentList = document.querySelectorAll(".content-list");
+  console.log(contentList);
+  for (let i = 0; i < contentList.length; i++) {
+    if (index === i) {
+      contentList[i].classList.remove("hide-tabs");
+    } else if (contentList[i].classList.contains("hide-tabs") === false) {
+      contentList[i].classList.add("hide-tabs");
+    }
+  }
+  nav.classList.toggle("hide");
+  burgerMenu.classList.toggle("active");
+}
+
+const burgerMenu = document.querySelector(".burger");
 const nav = document.querySelector(".navigation");
 const settingList = document.querySelector(".content-list");
 const navinner = document.querySelector(".setting-profile");
-
-function openSidebar() {
-  if (nav.classList.contains("hide") === true)
-    nav.classList.remove("hide") & settingList.classList.add("hidecontent");
-}
 
 let countValue = 50;
 function handleCount() {
@@ -33,15 +48,15 @@ function handleCount() {
 }
 
 function secondMenu() {
-  if (navinner.classList.contains("hide") === true) {
-    navinner.classList.remove("hide");
-  } else navinner.classList.add("hide");
+  navinner.classList.toggle("hide");
 }
 
-function openFirstSettings() {
-  if (settingList.classList.contains("hidecontent")) {
-    (nav.classList.add("hide") === true) &
-      (navinner.classList.add("hide") === true) &
-      settingList.classList.remove("hidecontent");
-  }
+function openFirstSettings(index) {
+  navinner.classList.toggle("hide");
+  showContent(index);
 }
+burgerMenu.addEventListener("click", function () {
+  this.classList.toggle("active");
+  nav.classList.toggle("hide");
+  navinner.classList.add("hide");
+});

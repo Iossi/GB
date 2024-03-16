@@ -14,9 +14,9 @@
   <body>
     <header class="header">
       <div class="logo">
-        <a class="tabMenu" onclick="openSidebar()"
-          ><img src="/img/menu.svg"
-        /></a>
+        <div class="burger" onclick="openSidebar()">
+          <span></span>
+        </div>
         <a href="/"><img src="/img/logo.svg" /></a>
         <h1>GB Adviser</h1>
       </div>
@@ -35,9 +35,11 @@
         <img src="/img/arrow.svg" />
       </div>
     </header>
-    <div class="content">
+    <div class="page">
       <nav class="navigation hide" id="mySidebar">
-        <button class="button"><img src="/img/main.svg" />Главная</button>
+        <button class="button" onclick="showContent(0)">
+          <img src="/img/main.svg" />Главная
+        </button>
         <button class="button">
           <img src="/img/menu_dot.svg" />Запросы<span>16</span>
         </button>
@@ -61,17 +63,22 @@
         </button>
       </nav>
       <div class="setting-profile hide">
-        <button class="button_back" onclick="secondMenu()">
-          <img src="/img/arrow_back.svg" />Назад
+        <button
+          style="font-size: 13px; height: auto; min-width: auto"
+          class="button"
+          onclick="secondMenu()"
+        >
+          <img
+            style="margin: auto; width: 18px; height: 18px"
+            src="/img/arrow_back.svg"
+          />Назад
         </button>
         <h2>Настройки профиля</h2>
-        <button
-          class="setting-profile__button_blue"
-          onclick="openFirstSettings()"
-        >
-          Первичная настройка
-        </button>
-        <div class="position-button">
+
+        <div class="setting-profile__buttons">
+          <button class="button" onclick="openFirstSettings(1)">
+            Первичная настройка
+          </button>
           <button class="button">Профиль пользователя</button>
           <button class="button">Изменение общих настроек</button>
           <button class="button">Дополнительные возможности</button>
@@ -79,13 +86,52 @@
           <button class="button">Работа со стастистикой</button>
         </div>
       </div>
-      <div class="content-list hidecontent">
-        <input
-          class="content-list__input"
-          type="search"
-          placeholder="Поиск..."
-        />
-        <div class="primary-setting">
+      <div class="content">
+        <input class="content__input" type="search" placeholder="Поиск..." />
+        <div class="content-list">
+          <div class="main-content">
+            <h2>Главная</h2>
+            <h3>Наши преимущства</h3>
+            <img src="/img/work.svg" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean
+              et tortor at risus viverra. Elit ut aliquam purus sit. Eget mauris
+              pharetra et ultrices neque ornare aenean euismod elementum.
+              Commodo viverra maecenas accumsan lacus. Dolor sit amet
+              consectetur adipiscing elit pellentesque habitant. Tristique
+              senectus et netus et malesuada fames ac turpis. Felis eget velit
+              aliquet sagittis id consectetur purus ut faucibus. Sed vulputate
+              mi sit amet. Sit amet consectetur adipiscing elit pellentesque
+              habitant morbi tristique senectus. At tellus at urna condimentum
+              mattis pellentesque id nibh.
+            </p>
+            <hr />
+            <p>
+              Commodo ullamcorper a lacus vestibulum sed arcu non odio euismod.
+              Commodo odio aenean sed adipiscing. Eget nunc lobortis mattis
+              aliquam faucibus purus. Sit amet commodo nulla facilisi. Cras
+              fermentum odio eu feugiat pretium nibh ipsum consequat. Massa
+              placerat duis ultricies lacus sed. Sollicitudin nibh sit amet
+              commodo nulla facilisi nullam vehicula. Et malesuada fames ac
+              turpis egestas. Ipsum a arcu cursus vitae congue mauris rhoncus.
+              Tempor id eu nisl nunc mi ipsum faucibus vitae. Viverra ipsum nunc
+              aliquet bibendum enim facilisis gravida. Turpis egestas maecenas
+              pharetra convallis posuere. Commodo ullamcorper a lacus
+              vestibulum. Odio aenean sed adipiscing diam donec adipiscing
+              tristique risus. Sed vulputate mi sit amet mauris commodo quis.
+              Nulla aliquet porttitor lacus luctus accumsan tortor posuere. Nunc
+              sed velit dignissim sodales. In vitae turpis massa sed. Nunc id
+              cursus metus aliquam. Pellentesque eu tincidunt tortor aliquam
+              nulla facilisi cras fermentum odio. Libero nunc consequat interdum
+              varius. Vestibulum rhoncus est pellentesque elit ullamcorper
+              dignissim. Laoreet non curabitur gravida arcu. Sed blandit libero
+              volutpat sed cras ornare arcu.
+            </p>
+          </div>
+        </div>
+
+        <div class="content-list hide-tabs">
           <h3>Первичная настройка</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
@@ -95,10 +141,11 @@
             est.
           </p>
           <div class="recommendation-text">
-            <p>
-              Рекомендации:<br />Lorem ipsum dolor sit, amet, consectetur
-              adipisicing elit. Fugiat.
-            </p>
+            <p>Рекомендации:</p>
+            <span
+              >Lorem ipsum dolor sit, amet, consectetur adipisicing elit.
+              Fugiat.</span
+            >
           </div>
           <hr />
           <div class="starting-work">
@@ -128,9 +175,7 @@
           <div class="additional-information">
             <h3>Дополнительная информация</h3>
             <div class="tabs">
-              <div class="tab" onclick="moveIndicator(0)" id="defaultOpen">
-                Пункт 11
-              </div>
+              <div class="tab" onclick="moveIndicator(0)">Пункт 11</div>
               <div class="tab" onclick="moveIndicator(1)">Пункт 10</div>
               <div class="tab" onclick="moveIndicator(2)">Пункт 9</div>
               <div class="tab-indicator"></div>
