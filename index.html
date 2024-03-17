@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" crossorigin href="/assets/index-B-CnjO2S.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <div class="burger" onclick="openSidebar()">
+          <span></span>
+        </div>
+        <a href="/"><img src="data:image/svg+xml,%3csvg%20width='42'%20height='38'%20viewBox='0%200%2042%2038'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M28.473%2018.908C28.3856%2018.9779%2028.3372%2018.994%2028.3278%2018.9564C27.4771%2018.9416%2026.6265%2018.9342%2025.7758%2018.9342C24.577%2018.9342%2023.7277%2018.8959%2023.2278%2018.8193C21.2832%2018.5223%2019.6288%2017.7166%2018.2648%2016.4023C15.4681%2013.7065%2014.6302%2010.3299%2015.751%206.27273C15.88%206.0362%2016.005%205.78624%2016.126%205.52284C17.4463%202.67849%2019.8674%200.821902%2022.9375%200.140549C23.3071%200.0585716%2023.9454%200.0162388%2024.8525%200.013551C29.1664%20-0.00123178%2033.4346%20-0.00391975%2037.6571%200.0054875C37.8211%200.0054875%2037.8661%200.0787296%2037.7922%200.225214L28.473%2018.908Z'%20fill='%236C72FF'/%3e%3cpath%20d='M15.751%206.27271C14.6302%2010.3299%2015.4681%2013.7064%2018.2648%2016.4023C19.6288%2017.7166%2021.2831%2018.5223%2023.2277%2018.8193C23.7277%2018.8959%2024.577%2018.9342%2025.7758%2018.9342C26.6264%2018.9342%2027.4771%2018.9416%2028.3278%2018.9564L18.8917%2038L0.108104%2037.9939C0.0896412%2037.9938%200.071515%2037.989%200.0554287%2037.9799C0.0393425%2037.9708%200.0258242%2037.9578%200.0161477%2037.9421C0.00647116%2037.9264%200.000953335%2037.9085%200.000112865%2037.89C-0.000727604%2037.8716%200.00313678%2037.8532%200.0113431%2037.8367L15.751%206.27271Z'%20fill='%23D0D0FB'/%3e%3cpath%20d='M18.8916%2038L28.3277%2018.9564C28.3371%2018.994%2028.3855%2018.9779%2028.4729%2018.908C29.6649%2018.8986%2030.8442%2018.8939%2032.0107%2018.8939C33.2242%2018.8953%2034.4922%2019.1997%2035.8146%2019.8071C40.1466%2021.7987%2042.2592%2026.7396%2040.8582%2031.2913C39.8684%2034.5026%2037.1692%2037.0506%2033.8249%2037.7823C33.161%2037.9275%2032.1457%2038%2030.779%2038C26.8548%2037.9987%2022.8924%2037.9987%2018.8916%2038Z'%20fill='%23212D9D'/%3e%3c/svg%3e" /></a>
+        <h1>GB Adviser</h1>
+      </div>
+      <div class="search">
+        <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M10.5%203C14.6421%203%2018%206.35786%2018%2010.5C18%2012.2101%2017.4276%2013.7866%2016.464%2015.0483L19.7071%2018.2929C20.0976%2018.6834%2020.0976%2019.3166%2019.7071%2019.7071C19.3466%2020.0676%2018.7794%2020.0953%2018.3871%2019.7903L18.2929%2019.7071L15.0483%2016.464C13.7866%2017.4276%2012.2101%2018%2010.5%2018C6.35786%2018%203%2014.6421%203%2010.5C3%206.35786%206.35786%203%2010.5%203ZM10.5%205C7.46243%205%205%207.46243%205%2010.5C5%2013.5376%207.46243%2016%2010.5%2016C11.8511%2016%2013.0885%2015.5128%2014.0459%2014.7045C14.091%2014.5536%2014.1738%2014.412%2014.2929%2014.2929C14.412%2014.1738%2014.5536%2014.091%2014.7041%2014.0446C15.5128%2013.0885%2016%2011.8511%2016%2010.5C16%207.46243%2013.5376%205%2010.5%205Z'%20fill='%237E84A3'/%3e%3c/svg%3e" />
+        <input class="search__input" type="search" placeholder="Поиск..." />
+      </div>
+      <div class="user">
+        <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M19%203C20.1046%203%2021%203.89543%2021%205V17C21%2018.1046%2020.1046%2019%2019%2019H9L3%2022L3%205C3%203.89543%203.89543%203%205%203H19ZM19%205H5V18.468L8.44603%2017H19V5ZM11%2012V14H7V12H11ZM17%208V10H7V8H17Z'%20fill='%237E84A3'/%3e%3c/svg%3e" />
+        <div class="bell">
+          <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M13%203C15.2816%203.46373%2017%205.58146%2017%208V12C18.1046%2012%2019%2012.8954%2019%2014V19H14C14%2020.1046%2013.1046%2021%2012%2021C10.8954%2021%2010%2020.1046%2010%2019H5V14C5%2012.8954%205.89543%2012%207%2012V8C7%205.58111%208.71785%203.46334%2011%203H13ZM12%205C10.4023%205%209.09634%206.24892%209.00509%207.82373L9%208V12C9%2013.1046%208.10457%2014%207%2014V17H17V14C15.8954%2014%2015%2013.1046%2015%2012V8C15%206.34315%2013.6569%205%2012%205Z'%20fill='%237E84A3'/%3e%3c/svg%3e" />
+          <span>5</span>
+        </div>
+        <img src="/assets/Bitmap-DEPmXV24.svg" />
+        <p>Саша Смелая</p>
+        <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6.29289%209.29289C5.93241%209.65338%205.90468%2010.2206%206.2097%2010.6129L6.29289%2010.7071L11.2929%2015.7071C11.6534%2016.0676%2012.2206%2016.0953%2012.6129%2015.7903L12.7071%2015.7071L17.7071%2010.7071C18.0976%2010.3166%2018.0976%209.68342%2017.7071%209.29289C17.3466%208.93241%2016.7794%208.90468%2016.3871%209.2097L16.2929%209.29289L12%2013.585L7.70711%209.29289C7.34662%208.93241%206.77939%208.90468%206.3871%209.2097L6.29289%209.29289Z'%20fill='%237E84A3'/%3e%3c/svg%3e" />
+      </div>
+    </header>
+    <div class="page">
+      <nav class="navigation hide" id="mySidebar">
+        <button class="button" onclick="showContent(0)">
+          <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M13.3287%203.51558C13.3873%203.56764%2013.4428%203.6231%2013.4948%203.68167L19.4948%2010.4317C19.8202%2010.7978%2020%2011.2706%2020%2011.7604V19C20%2020.1046%2019.1046%2021%2018%2021H14.002C14.0013%2021%2014.0007%2021%2014%2021H10C9.99934%2021%209.99868%2021%209.99803%2021H6C4.89543%2021%204%2020.1046%204%2019V11.7604C4%2011.2706%204.17976%2010.7978%204.50518%2010.4317L10.5052%203.68167C11.239%202.8561%2012.5032%202.78174%2013.3287%203.51558ZM11%2019H13V15H11V19ZM15%2019V14C15%2013.4477%2014.5523%2013%2014%2013H10C9.44772%2013%209%2013.4477%209%2014V19H6V11.7604L12%205.0104L18%2011.7604V19H15Z'%20fill='%237E84A3'/%3e%3c/svg%3e" />Главная
+        </button>
+        <button class="button">
+          <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M6%2015V17H4V15H6ZM19%2015C19.5523%2015%2020%2015.4477%2020%2016C20%2016.5523%2019.5523%2017%2019%2017H9C8.44772%2017%208%2016.5523%208%2016C8%2015.4477%208.44772%2015%209%2015H19ZM6%2011V13H4V11H6ZM19%2011C19.5523%2011%2020%2011.4477%2020%2012C20%2012.5523%2019.5523%2013%2019%2013H9C8.44772%2013%208%2012.5523%208%2012C8%2011.4477%208.44772%2011%209%2011H19ZM6%207V9H4V7H6ZM19%207C19.5523%207%2020%207.44772%2020%208C20%208.55228%2019.5523%209%2019%209H9C8.44772%209%208%208.55228%208%208C8%207.44772%208.44772%207%209%207H19Z'%20fill='%237E84A3'/%3e%3c/svg%3e" />Запросы<span>16</span>
+        </button>
+        <button class="button"><img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M11.5459%203.57029C11.9641%203.15205%2012.5498%202.9466%2013.1377%203.01192L21%203L20.9881%2010.8623C21.0534%2011.4502%2020.848%2012.0359%2020.4297%2012.4541L11.4541%2021.4297C10.6937%2022.1901%209.46093%2022.1901%208.70056%2021.4297L2.57027%2015.2994C1.80991%2014.5391%201.80991%2013.3063%202.57027%2012.5459L11.5459%203.57029ZM13%205L3.94704%2013.9227L10.0773%2020.053L19%2011V5H13ZM14%208L16%2010L14%2012L12%2010L14%208Z'%20fill='%237E84A3'/%3e%3c/svg%3e" />Заметки</button>
+        <button class="button"><img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M9.5%202L12%205H20C21.1046%205%2022%205.89543%2022%207V19C22%2020.1046%2021.1046%2021%2020%2021H4C2.89543%2021%202%2020.1046%202%2019V4C2%202.89543%202.89543%202%204%202H9.5ZM11.0632%207L8.563%204H4V19H20V7H11.0632Z'%20fill='%237E84A3'/%3e%3c/svg%3e" />Категории</button>
+        <button class="button">
+          <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M12%2012C16.3349%2012%2019.8645%2015.4478%2019.9962%2019.7508L20%2020V21H4V20C4%2015.5817%207.58172%2012%2012%2012ZM12%2014C9.14444%2014%206.75479%2015.9948%206.14861%2018.667L6.10104%2018.8977L6.084%2019H17.915L17.899%2018.8977C17.4095%2016.2618%2015.1969%2014.2312%2012.4739%2014.0184L12.2249%2014.0041L12%2014ZM12%203C14.2091%203%2016%204.79086%2016%207C16%209.20914%2014.2091%2011%2012%2011C9.79086%2011%208%209.20914%208%207C8%204.79086%209.79086%203%2012%203ZM12%205C10.8954%205%2010%205.89543%2010%207C10%208.10457%2010.8954%209%2012%209C13.1046%209%2014%208.10457%2014%207C14%205.89543%2013.1046%205%2012%205Z'%20fill='%237E84A3'/%3e%3c/svg%3e" />Пользователи
+        </button>
+        <button class="button"><img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M18.7857%2019C19.4563%2019%2020%2019.4477%2020%2020C20%2020.5523%2019.4563%2021%2018.7857%2021H4.21429C3.54365%2021%203%2020.5523%203%2020C3%2019.4477%203.54365%2019%204.21429%2019H18.7857ZM18%203C19.1046%203%2020%203.89543%2020%205V17H3V13C3%2011.8954%203.89543%2011%205%2011H8V9C8%207.89543%208.89543%207%2010%207H13V5C13%203.89543%2013.8954%203%2015%203H18ZM8%2013H5V15H8V13ZM13%209H10V15H13V9ZM18%205H15V15H18V5Z'%20fill='%237E84A3'/%3e%3c/svg%3e" />Статистика</button>
+        <button class="button"><img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M12.393%203.08026C12.6263%203.17944%2012.8122%203.36304%2012.9126%203.59335L14.9554%208.27719L20.098%208.74815C20.6445%208.79819%2021.0464%209.27618%2020.9957%209.81576C20.9722%2010.0654%2020.8529%2010.2968%2020.6621%2010.4623L16.782%2013.828L17.9175%2018.8029C18.0382%2019.3316%2017.702%2019.8567%2017.1666%2019.9758C16.9189%2020.031%2016.6591%2019.9904%2016.4408%2019.8623L12%2017.2586L7.55917%2019.8623C7.08728%2020.139%206.4776%2019.9856%206.19741%2019.5196C6.06775%2019.304%206.02662%2019.0476%206.08245%2018.8029L7.21798%2013.828L3.33788%2010.4623C2.92558%2010.1046%202.88497%209.48469%203.24717%209.07757C3.41477%208.88918%203.64907%208.77131%203.90194%208.74815L9.04454%208.27719L11.0873%203.59335C11.3044%203.09565%2011.889%202.86593%2012.393%203.08026ZM13.5968%2010.1236L12%206.46162L10.4031%2010.1236L6.38164%2010.4914L9.4162%2013.1228L8.52801%2017.0114L12%2014.9764L15.4709%2017.0114L14.5838%2013.1228L17.6173%2010.4914L13.5968%2010.1236Z'%20fill='%237E84A3'/%3e%3c/svg%3e" />Избранное</button>
+        <button class="button"><img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M19%203C20.1046%203%2021%203.89543%2021%205V17C21%2018.1046%2020.1046%2019%2019%2019H9L3%2022L3%205C3%203.89543%203.89543%203%205%203H19ZM19%205H5V18.468L8.44603%2017H19V5ZM11%2012V14H7V12H11ZM17%208V10H7V8H17Z'%20fill='%237E84A3'/%3e%3c/svg%3e" />Поддержка</button>
+        <p>Информация</p>
+        <button class="button" onclick="secondMenu()">
+          <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M12%202C17.5228%202%2022%206.47715%2022%2012C22%2017.5228%2017.5228%2022%2012%2022C6.47715%2022%202%2017.5228%202%2012C2%206.47715%206.47715%202%2012%202ZM12%204C7.58172%204%204%207.58172%204%2012C4%2016.4183%207.58172%2020%2012%2020C16.4183%2020%2020%2016.4183%2020%2012C20%207.58172%2016.4183%204%2012%204ZM16%2010C16%207.79086%2014.2091%206%2012%206C9.79086%206%208%207.79086%208%2010H10L10.0055%209.85074C10.0818%208.81588%2010.9456%208%2012%208C13.1046%208%2014%208.89543%2014%2010C14%2011.1046%2013.1046%2012%2012%2012C11.4477%2012%2011%2012.4477%2011%2013V14C11%2014.5523%2011.4477%2015%2012%2015C12.5523%2015%2013%2014.5523%2013%2014V13.874C14.7252%2013.4299%2016%2011.8638%2016%2010ZM13%2018V16H11V18H13Z'%20fill='%237E84A3'/%3e%3c/svg%3e" />База знаний
+        </button>
+        <button class="button"><img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M12%202C15.866%202%2019%205.13401%2019%209C19%2011.3782%2017.8141%2013.4793%2016.0013%2014.7444L16%2022L12%2019L8%2022L7.99967%2014.7451C6.18637%2013.4801%205%2011.3786%205%209C5%205.13401%208.13401%202%2012%202ZM14%2016H10V18L12%2017L14%2018V16ZM12%204C9.23858%204%207%206.23858%207%209C7%2011.7614%209.23858%2014%2012%2014C14.7614%2014%2017%2011.7614%2017%209C17%206.23858%2014.7614%204%2012%204Z'%20fill='%237E84A3'/%3e%3c/svg%3e" />Обновления</button>
+        <p>Настройки</p>
+        <button class="button"><img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M12%2012C16.3349%2012%2019.8645%2015.4478%2019.9962%2019.7508L20%2020V21H4V20C4%2015.5817%207.58172%2012%2012%2012ZM12%2014C9.14444%2014%206.75479%2015.9948%206.14861%2018.667L6.10104%2018.8977L6.084%2019H17.915L17.899%2018.8977C17.4095%2016.2618%2015.1969%2014.2312%2012.4739%2014.0184L12.2249%2014.0041L12%2014ZM12%203C14.2091%203%2016%204.79086%2016%207C16%209.20914%2014.2091%2011%2012%2011C9.79086%2011%208%209.20914%208%207C8%204.79086%209.79086%203%2012%203ZM12%205C10.8954%205%2010%205.89543%2010%207C10%208.10457%2010.8954%209%2012%209C13.1046%209%2014%208.10457%2014%207C14%205.89543%2013.1046%205%2012%205Z'%20fill='%237E84A3'/%3e%3c/svg%3e" />Профиль</button>
+        <button class="button">
+          <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M13.5%202L16%205L20%205.5L22%208.5L20%2012L22%2015.5L20%2018.5L16%2019L13.5%2022H10.5L8%2019L4%2018.5L2%2015.5L4%2012L2%208.5L4%205.5L8%205L10.5%202H13.5ZM12.562%203.999H11.437L9.0312%206.88666L5.156%207.37L4.35%208.581L6.3035%2012L4.35%2015.418L5.156%2016.629L9.0312%2017.1133L11.436%2019.999H12.563L14.9688%2017.1133L18.843%2016.629L19.649%2015.418L17.6965%2012L19.649%208.581L18.843%207.37L14.9688%206.88666L12.562%203.999ZM12%208C14.2091%208%2016%209.79086%2016%2012C16%2014.2091%2014.2091%2016%2012%2016C9.79086%2016%208%2014.2091%208%2012C8%209.79086%209.79086%208%2012%208ZM12%2010C10.8954%2010%2010%2010.8954%2010%2012C10%2013.1046%2010.8954%2014%2012%2014C13.1046%2014%2014%2013.1046%2014%2012C14%2010.8954%2013.1046%2010%2012%2010Z'%20fill='%237E84A3'/%3e%3c/svg%3e" />Общие настройки
+        </button>
+      </nav>
+      <div class="setting-profile hide">
+        <button
+          style="font-size: 13px; height: auto; min-width: auto"
+          class="button"
+          onclick="secondMenu()"
+        >
+          <img
+            style="margin: auto; width: 18px; height: 18px"
+            src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M9.3871%206.2097L9.29289%206.29289L4.29289%2011.2929C3.93241%2011.6534%203.90468%2012.2206%204.2097%2012.6129L4.29289%2012.7071L9.29289%2017.7071C9.68342%2018.0976%2010.3166%2018.0976%2010.7071%2017.7071C11.0676%2017.3466%2011.0953%2016.7794%2010.7903%2016.3871L10.7071%2016.2929L7.414%2012.999L18%2013C18.5523%2013%2019%2012.5523%2019%2012C19%2011.4477%2018.5523%2011%2018%2011L7.416%2010.999L10.7071%207.70711C11.0676%207.34662%2011.0953%206.77939%2010.7903%206.3871L10.7071%206.29289C10.3466%205.93241%209.77939%205.90468%209.3871%206.2097Z'%20fill='%237E84A3'/%3e%3c/svg%3e"
+          />Назад
+        </button>
+        <h2>Настройки профиля</h2>
+
+        <div class="setting-profile__buttons">
+          <button class="button" onclick="openFirstSettings(1)">
+            Первичная настройка
+          </button>
+          <button class="button">Профиль пользователя</button>
+          <button class="button">Изменение общих настроек</button>
+          <button class="button">Дополнительные возможности</button>
+          <button class="button">Отправка запросов</button>
+          <button class="button">Работа со стастистикой</button>
+        </div>
+      </div>
+      <div class="content">
+        <input class="content__input" type="search" placeholder="Поиск..." />
+        <div class="content-list">
+          <div class="main-content">
+            <h2>Главная</h2>
+            <h3>Наши преимущства</h3>
+            <img src="/assets/work-B2UPN2De.svg" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean
+              et tortor at risus viverra. Elit ut aliquam purus sit. Eget mauris
+              pharetra et ultrices neque ornare aenean euismod elementum.
+              Commodo viverra maecenas accumsan lacus. Dolor sit amet
+              consectetur adipiscing elit pellentesque habitant. Tristique
+              senectus et netus et malesuada fames ac turpis. Felis eget velit
+              aliquet sagittis id consectetur purus ut faucibus. Sed vulputate
+              mi sit amet. Sit amet consectetur adipiscing elit pellentesque
+              habitant morbi tristique senectus. At tellus at urna condimentum
+              mattis pellentesque id nibh.
+            </p>
+            <hr />
+            <p>
+              Commodo ullamcorper a lacus vestibulum sed arcu non odio euismod.
+              Commodo odio aenean sed adipiscing. Eget nunc lobortis mattis
+              aliquam faucibus purus. Sit amet commodo nulla facilisi. Cras
+              fermentum odio eu feugiat pretium nibh ipsum consequat. Massa
+              placerat duis ultricies lacus sed. Sollicitudin nibh sit amet
+              commodo nulla facilisi nullam vehicula. Et malesuada fames ac
+              turpis egestas. Ipsum a arcu cursus vitae congue mauris rhoncus.
+              Tempor id eu nisl nunc mi ipsum faucibus vitae. Viverra ipsum nunc
+              aliquet bibendum enim facilisis gravida. Turpis egestas maecenas
+              pharetra convallis posuere. Commodo ullamcorper a lacus
+              vestibulum. Odio aenean sed adipiscing diam donec adipiscing
+              tristique risus. Sed vulputate mi sit amet mauris commodo quis.
+              Nulla aliquet porttitor lacus luctus accumsan tortor posuere. Nunc
+              sed velit dignissim sodales. In vitae turpis massa sed. Nunc id
+              cursus metus aliquam. Pellentesque eu tincidunt tortor aliquam
+              nulla facilisi cras fermentum odio. Libero nunc consequat interdum
+              varius. Vestibulum rhoncus est pellentesque elit ullamcorper
+              dignissim. Laoreet non curabitur gravida arcu. Sed blandit libero
+              volutpat sed cras ornare arcu.
+            </p>
+          </div>
+        </div>
+
+        <div class="content-list hide-tabs">
+          <h3>Первичная настройка</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            facilis minima necessitatibus ducimus illo sed quo deserunt
+            excepturi sunt non enim inventore aliquam esse asperiores ea dolorem
+            quibusdam labore quos facere iusto, obcaecati doloremque aliquid
+            est.
+          </p>
+          <div class="recommendation-text">
+            <p>Рекомендации:</p>
+            <span
+              >Lorem ipsum dolor sit, amet, consectetur adipisicing elit.
+              Fugiat.</span
+            >
+          </div>
+          <hr />
+          <div class="starting-work">
+            <h3>Начало работы</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+              sunt, iste animi, quia numquam, rerum veritatis itaque tempore
+              facilis repellendus harum reiciendis.
+            </p>
+            <ol>
+              <li>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Similique, doloribus, nulla. Soluta error repudiandae cumque
+                veniam fugiat, voluptatem repellat provident, pariatur.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                harum delectus nemo iure praesentium amet, maxime veniam.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repellendus aut nam earum! Lorem ipsum dolor sit amet.
+              </li>
+            </ol>
+          </div>
+          <hr />
+          <div class="additional-information">
+            <h3>Дополнительная информация</h3>
+            <div class="tabs">
+              <div class="tab" onclick="moveIndicator(0)">Пункт 11</div>
+              <div class="tab" onclick="moveIndicator(1)">Пункт 10</div>
+              <div class="tab" onclick="moveIndicator(2)">Пункт 9</div>
+              <div class="tab-indicator"></div>
+            </div>
+            <div class="tabs-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio facilis minima necessitatibus ducimus illo sed quo
+                deserunt excepturi sunt non enim inventore aliquam esse
+                asperiores ea dolorem quibusdam est.
+              </p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Similique, doloribus, nulla. Soluta error repudiandae cumque
+                veniam fugiat.
+              </p>
+            </div>
+            <div class="tabs-content hide-tabs">
+              <p>Текст 2</p>
+            </div>
+            <div class="tabs-content hide-tabs">
+              <p>Текст 3</p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="count-liked">
+          <h3>Вам помогла эта статья?</h3>
+          <button class="count-liked__button" onclick="handleCount()">
+            Да
+          </button>
+          <button class="count-liked__button">Нет</button>
+          <p class="count-help">50 людям помогла эта статья</p>
+        </div>
+        <div class="info-block">
+          <div class="community">
+            <h3>Сообщество GB</h3>
+            <p>
+              Обращайтесь за помощью к членам сообщества, <br />задавайте любые
+              вопросы и получайте ответы.
+            </p>
+            <button>Присоединиться к сообществу</button>
+          </div>
+          <div class="community">
+            <h3>GB Connect</h3>
+            <p>
+              Пользуйтесь всеми возможностями GB.<br />
+              Пройдите регистрацию в GB Connect.
+            </p>
+            <button>Регистрация</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
