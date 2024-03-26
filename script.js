@@ -60,3 +60,9 @@ burgerMenu.addEventListener("click", function () {
   nav.classList.toggle("hide");
   navinner.classList.add("hide");
 });
+window.showContent = showContent;
+window.secondMenu = secondMenu;
+window.openFirstSettings = openFirstSettings;
+window.handleCount = handleCount;
+window.moveIndicator = moveIndicator;
+window.showTabContent = showTabContent;
