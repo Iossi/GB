@@ -217,10 +217,9 @@ h3 {
 .content__input::placeholder {
   color: rgba(161, 167, 196, 1);
 }
-.content hr:last-of-type {
+.content hr:nth-child(4) {
   border: 1px solid;
   color: rgba(230, 233, 244, 1);
-  display: none;
 }
 .content {
   line-height: 24px;
@@ -332,7 +331,6 @@ h3 {
   margin-bottom: 30px;
   background-color: white;
   border-radius: 5px;
-  display: none;
 }
 .info-block {
   display: flex;

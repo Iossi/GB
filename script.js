@@ -34,7 +34,7 @@ function showContent(index) {
   nav.classList.toggle("hide");
   burgerMenu.classList.toggle("active");
 }
-
+const countLiked = document.querySelector(".count-liked");
 const burgerMenu = document.querySelector(".burger");
 const nav = document.querySelector(".navigation");
 const settingList = document.querySelector(".content-list");
@@ -54,6 +54,7 @@ function secondMenu() {
 function openFirstSettings(index) {
   navinner.classList.toggle("hide");
   showContent(index);
+  countLiked.classList.remove("hide-tabs");
 }
 burgerMenu.addEventListener("click", function () {
   this.classList.toggle("active");
