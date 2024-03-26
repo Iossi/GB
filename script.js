@@ -27,6 +27,7 @@ function showContent(index) {
   for (let i = 0; i < contentList.length; i++) {
     if (index === i) {
       contentList[i].classList.remove("hide-tabs");
+      countLiked.classList.add("hide-tabs");
     } else if (contentList[i].classList.contains("hide-tabs") === false) {
       contentList[i].classList.add("hide-tabs");
     }

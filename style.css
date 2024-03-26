@@ -217,7 +217,7 @@ h3 {
 .content__input::placeholder {
   color: rgba(161, 167, 196, 1);
 }
-.content hr:nth-child(4) {
+.content hr:last-of-type {
   border: 1px solid;
   color: rgba(230, 233, 244, 1);
 }
